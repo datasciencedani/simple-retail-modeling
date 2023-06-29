@@ -26,10 +26,10 @@ node_modules
 */.ipynb_checkpoints/*
 
 # Word docx
-.docx
+*.docx
 
 # Pipeline files
-.json
+*.json
 
 # Configuraion variables
 config/
