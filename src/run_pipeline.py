@@ -65,7 +65,7 @@ def main():
         location=LOCATION,
         parameter_values={
             "project": PROJECT_ID,
-            "data_path": 'gs://analytics-ml-insights-support-dxz845m-bucket/online_retail_example/data/OnlineRetail.csv',
+            "data_path": f'gs://{BUCKET_NAME}/online_retail_example/data/OnlineRetail.csv',
             "bucket": BUCKET_NAME,
         },
     )
