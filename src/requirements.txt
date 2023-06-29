@@ -1,0 +1,36 @@
+# Package requirements to run the pipelines locally + steps. 
+#
+# It is not necessary to have the packages that you use 
+# inside the components locally installed. On the definition
+# of each component (@component decorator) you can specify 
+# the packages and versions used in that step of code. 
+# Packages can differ from component to component. Each component 
+# is its own container.
+# 
+# Instructions to run pipeline locally:
+# (Step 1 is not necessary in the Vertex Workbench)
+# 1. Go to https://cloud.google.com/sdk/docs/install and 
+#   follow the instructions to install the Google Cloud
+#   Command Line. We will use it to authenticate with our 
+#   credentials and connect to the Cloud Services.
+# 2. Go to a terminal.
+# 3. Create an environment with Python 3.9 to install the 
+#   necessary packages. You can use Conda with the following 
+#   command:
+#       conda create -n vertexenv python=3.9
+# 4. Activate the environment. If using Conda:
+#       conda activate vertexenv
+# 5. Install this requirements.txt file. In terminal:
+#       pip install -r requirements.txt
+# 6. Authenticate with your credentials (run this command every 
+#   time your session expires). In terminal:
+#       gcloud auth login --update-adc
+# 7. You're ready to run your pipelines! In terminal, go to 
+#   any run_pipeline.py file and run the command:
+#       python3 run_pipeline.py
+
+protobuf==3.19.6
+google-cloud-aiplatform==1.15.1
+google-cloud-storage==2.7.0
+kfp==1.8.19
+google-cloud-pipeline-components==2.0.0
