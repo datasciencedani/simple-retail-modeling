@@ -1,12 +1,5 @@
 # Package requirements to run the pipelines locally + steps. 
 #
-# It is not necessary to have the packages that you use 
-# inside the components locally installed. On the definition
-# of each component (@component decorator) you can specify 
-# the packages and versions used in that step of code. 
-# Packages can differ from component to component. Each component 
-# is its own container.
-# 
 # Instructions to run pipeline locally:
 # (Step 1 is not necessary in the Vertex Workbench)
 # 1. Go to https://cloud.google.com/sdk/docs/install and 
