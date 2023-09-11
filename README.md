@@ -78,7 +78,7 @@ Additionally, it's important to plan for:
 - Automatic pipeline running ([scheduling](https://cloud.google.com/vertex-ai/docs/pipelines/schedule-pipeline-run) or [triggering](https://cloud.google.com/vertex-ai/docs/pipelines/trigger-pubsub)). 
 - CI/CD environment (ex. [GitHub actions workflow](https://docs.github.com/en/actions/using-workflows) that compiles, stores, and runs test pipelines jobs when changes are pushed to a repository).    
 
-
+- - -
     🚨Disclaimer:
 
     The project in this repository is not completely finished, but it can serve as an example of how an idea of an ML project can take various iterations to be done. 
